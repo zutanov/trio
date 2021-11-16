@@ -1,0 +1,134 @@
+$colorSquid: #7d74fd;
+$mainFont: 'Montserrat', sans-serif;
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mainFont;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  background: none;
+  font-family: $mainFont;
+  color: #FFF;
+}
+a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+select {
+  outline: 0;
+  border: none;
+  background: none;
+  font-family: $mainFont;
+}
+.section {
+  &__side {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  &__col-6 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// HERO
+.hero {
+  padding-top: 100px;
+  position: relative;
+  height: calc(100vh - 100px);
+  .container {
+    height: 100%;
+  }
+  .grid {
+    height: 100%;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.64px;
+    color: #03060B;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.16px;
+    color: #445B78;
+  }
+}
+
+// HEADER
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 100px;
+  background: #FFF1DA;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btn {
+    height: 40px;
+    width: 90px;
+    background: $colorSquid;
+    border: solid 1px $colorSquid;
+    border-radius: 10px;
+  }
+}
+
+// OPERATORS
+.operators {
+  height: 100vh;
+  background: aqua;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__logo {
+    cursor: pointer;
+    p {
+      font-size: 40px;
+    }
+  }
+  &__megacom {
+    &:hover {
+      &+operators__oshka {
+        color: #7d74fd;
+      }
+    }
+  }
+}
