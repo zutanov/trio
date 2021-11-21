@@ -144,7 +144,6 @@ select {
 }
 
 .covid {
-  height: 100vh;
   background: url("../images/covid/covid.jpeg") no-repeat center/cover;
   padding: 85px 0;
 }
