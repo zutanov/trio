@@ -26,7 +26,6 @@ a {
   color: inherit;
 }
 
-<<<<<<< HEAD
 .logo {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -34,6 +33,7 @@ a {
   line-height: 35px;
   color: #fff;
 }
+
 .logo_black {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -41,8 +41,6 @@ a {
   color: #299EF3;
 }
 
-=======
->>>>>>> cd64ebee32bebe00e08a6bba3159969096a85ef5
 select {
   outline: 0;
   border: none;
@@ -66,42 +64,77 @@ select {
 .grid {
   display: grid;
 }
+
 .grid__col-6 {
   grid-template-columns: 1fr 1fr;
 }
-<<<<<<< HEAD
+
 .grid__col-4 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 50px;
 }
+
 .grid__floor {
   grid-template-columns: 1fr;
   grid-row-gap: 10px;
 }
+
 .grid_gap20 {
   grid-column-gap: 20px;
 }
+
 .color_red {
   color: red;
 }
+
 .color_blue {
   color: rgba(0, 166, 255, 0.98);
 }
-=======
 
->>>>>>> cd64ebee32bebe00e08a6bba3159969096a85ef5
+.section__main-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #272D4E;
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  color: #272D4E;
+}
+
+.section__desc {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #94A2B3;
+}
+
+.section__link {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #299EF3;
+}
+
 .hero {
   padding-top: 100px;
   position: relative;
   height: calc(100vh - 100px);
   background: url("../images/hero/amico2.jpg");
 }
+
 .hero .container {
   height: 100%;
 }
+
 .hero .grid {
   height: 100%;
 }
+
 .hero__title {
   text-transform: uppercase;
   font-style: normal;
@@ -111,24 +144,23 @@ select {
   letter-spacing: 0.64px;
   color: #03060B;
 }
-<<<<<<< HEAD
+
 .hero__frame {
   display: flex;
   justify-content: center;
   align-items: center;
- position: relative;
+  position: relative;
 }
-.hero__frame video{
-  height: 80%;
 
+.hero__frame video {
+  height: 80%;
 }
-.hero__frame img{
+
+.hero__frame img {
   position: absolute;
-  top: -190px;
-  left: 70px;
   transform: rotate(90deg);
 }
-=======
+
 .hero__text {
   font-style: normal;
   font-weight: normal;
@@ -138,7 +170,6 @@ select {
   color: #445B78;
 }
 
->>>>>>> cd64ebee32bebe00e08a6bba3159969096a85ef5
 .header {
   position: absolute;
   top: 0;
@@ -146,14 +177,16 @@ select {
   right: 0;
   margin: 0 auto;
   height: 100px;
-  background: #FFF1DA;
+  background: #5A98D0;
 }
+
 .header .container {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .header .btn {
   height: 40px;
   width: 90px;
@@ -162,106 +195,43 @@ select {
   border-radius: 10px;
 }
 
-.operators {
-  height: 100vh;
-  background: aqua;
-}
-.operators .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.operators__logo {
-  cursor: pointer;
-}
-.operators__logo p {
-  font-size: 40px;
-}
-.operators__megacom:hover + operators__oshka {
-  color: #7d74fd;
+.covid {
+  background: url("../images/covid/covid.jpeg") no-repeat center/cover;
+  padding: 85px 0;
 }
 
-.uncharted {
-  background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
-  padding: 200px 0;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.covid__info {
+  width: 400px;
 }
-.uncharted .card {
-  position: relative;
-  width: 600px;
-  height: 350px;
-  margin: 20px;
-  padding: 15px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: #095a55;
-}
-.uncharted .card img {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 330px;
-  transition: all 0.6s ease;
-}
-<<<<<<< HEAD
 
+.covid__title {
+  color: #fff;
+}
 
 .about {
   height: calc(100vh - 160px);
   padding: 80px 0;
-  background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%)
-=======
-.uncharted .card .content {
-  position: relative;
-  width: 40%;
-  left: 20%;
-  opacity: 0;
-  visibility: hidden;
-  padding: 20px 20px 20px 40px;
-  transition: all 0.6s ease;
+  background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
 }
-.uncharted .card .content h2 {
-  color: #fff;
-  text-transform: uppercase;
->>>>>>> cd64ebee32bebe00e08a6bba3159969096a85ef5
-}
-.uncharted .card .content p {
-  color: #fff;
-  margin: 20px 0;
-}
-<<<<<<< HEAD
 
 .about img {
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
-=======
-.uncharted .card .content a {
-  color: #fff;
-  position: relative;
-  display: inline-block;
-  border: solid 1px #fff;
-  padding: 5px 10px;
->>>>>>> cd64ebee32bebe00e08a6bba3159969096a85ef5
-}
-.uncharted .card:hover .content {
-  left: 0;
-  opacity: 1;
-  visibility: visible;
-}
-.uncharted .card:hover img {
-  left: 75%;
-  height: 400px;
 }
 
-<<<<<<< HEAD
+.about__main-title {
+  margin-bottom: 35px;
+  align-items: center;
+}
+
+.about__title {
+  margin: 15px 0;
+}
+
+.about__desc {
+  margin-bottom: 15px;
+}
+
 .store {
   background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
   height: calc(100vh - 60px);
@@ -270,8 +240,8 @@ select {
 
 .store__advert {
   height: 25vh;
+}
 
-  }
 .store__head {
   display: flex;
   align-items: center;
@@ -279,15 +249,17 @@ select {
   background: url("../images/trio_logo_red.jpg") left no-repeat;
   transition: 0.6s;
 }
+
 .store__head:hover .store__title {
   font-size: 75px;
-  color:#fff;
-transform: rotateX(20deg);
+  color: #fff;
+  transform: rotateX(20deg);
 }
-.store__head:hover .store__title-bg {
-  background:red ;
 
+.store__head:hover .store__title-bg {
+  background: red;
 }
+
 .store__title {
   margin-right: 10%;
   font-family: Poppins, sans-serif;
@@ -295,15 +267,18 @@ transform: rotateX(20deg);
   font-size: 70px;
   line-height: 50px;
 }
+
 .store__foot {
   display: flex;
   align-items: center;
   background: url("../images/store/hb_bg4.jpg") center/cover;
 }
+
 .store__desc {
   margin-left: 15px;
   color: #000;
 }
+
 .store__rightside {
   background: url("../images/store/bf_bg5.jpg") center/cover;
 }
@@ -312,31 +287,37 @@ transform: rotateX(20deg);
   margin-top: 30px;
   padding: 15px;
 }
+
 .store__object {
   padding: 15px;
   height: 17vh;
 }
+
 .store__card {
   position: relative;
   border-radius: 10px;
   box-shadow: 5px 20px 30px rgba(16, 112, 177, 0.2);
   padding: 5px;
 }
+
 .store__card:hover .store__image {
   opacity: 1;
   visibility: visible;
   transition: 1s;
 }
+
 .store__card:hover .store__card-desc {
   opacity: 0;
   visibility: hidden;
   transition: 0.1s;
 }
+
 .store__image {
   text-align: center;
   opacity: 0;
   visibility: hidden;
 }
+
 .store__card-desc {
   opacity: 1;
   visibility: visible;
@@ -344,24 +325,28 @@ transform: rotateX(20deg);
   top: 35%;
   left: 25%;
 }
+
 .store__card_slider {
   position: relative;
   border-radius: 10px;
   box-shadow: 5px 20px 30px rgba(16, 112, 177, 0.2);
   padding: 5px;
-
 }
+
 .store__card_slider:hover .store__image_slider {
   transform: translate(25%, 7%);
   transition: 1s;
 }
+
 .store__card_slider:hover .store__card-desc_slider {
   opacity: 1;
   transition: 2s;
 }
-.store__image_slider{
+
+.store__image_slider {
   text-align: center;
 }
+
 .store__card-desc_slider {
   width: 30%;
   position: absolute;
@@ -369,38 +354,40 @@ transform: rotateX(20deg);
   left: 25%;
   opacity: 0;
 }
+
 .store__card_transition {
   position: relative;
   border-radius: 10px;
   box-shadow: 5px 20px 30px rgba(16, 112, 177, 0.2);
   padding: 5px;
-
 }
+
 .store__card_transition:hover .store__image_transition {
   margin-left: 50%;
   transform: rotate(-2turn);
   transition: 1.5s;
 }
+
 .store__card_transition:hover .store__card-desc_transition {
   opacity: 1;
   transition: 1.5s;
 }
-.store__image_transition{
+
+.store__image_transition {
   text-align: center;
 }
+
 .store__card-desc_transition {
-  width: 45%;
+  width: 40%;
   position: absolute;
   top: 30%;
   left: 25%;
   opacity: 0;
 }
+
 .card__desc {
   font-weight: 600;
   color: #03060B;
 }
 
-
-=======
 /*# sourceMappingURL=style.css.map */
->>>>>>> cd64ebee32bebe00e08a6bba3159969096a85ef5
