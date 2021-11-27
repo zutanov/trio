@@ -27,11 +27,26 @@ a {
   text-decoration: none;
   color: inherit;
 }
-select {
-  outline: 0;
-  border: none;
+//select {
+//  outline: 0;
+//  border: none;
+//  background: none;
+//  font-family: $mainFont;
+//}
+.select select{
+  display: inline-block;
+  border:none;
   background: none;
-  font-family: $mainFont;
+  appearance: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 50px;
+  z-index: 1;
+
+
 }
 .section {
   &__side {
@@ -50,8 +65,12 @@ select {
 .grid {
   display: grid;
   &__col-6 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
+  &__col-4{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
 
 // HERO
@@ -132,3 +151,165 @@ select {
     }
   }
 }
+.covid {
+  //height: 100vh;
+  background: url("../images/Covid-19-1.jpeg") no-repeat center/cover;
+  padding: 85px 0;
+&__info{
+  width:400px ;
+}
+  //&__btn {
+  //  height: 91px;
+  //  border-radius: 50px;
+  //  border: 2px solid #DC143CFF;
+  //  background: crimson;
+  //  color: #FFFFFF;
+  //  font-weight: 400;
+  //  font-size: 42px;
+  //  line-height: 16px;
+  //  text-transform: capitalize;
+  //  width: 377px;
+  //  transition: 0.6s;
+  //
+  //  &:hover {
+  //    background: #FFFFFF;
+  //    color: crimson;
+  //  }
+  //}
+
+  &__title {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 44px;
+    color: #FFFFFF;
+
+  }
+
+  //&__desk {
+  //  font-weight: normal;
+  //  font-size: 19px;
+  //  line-height: 30px;
+  //  color: #FFFFFF;
+  //}
+
+  &__vaccination {
+    background: coral;
+  }
+
+  &__mb {
+    color: crimson;
+    font-size: 25px;
+  }
+  //
+  //&__remark {
+  //  font-weight: 400;
+  //  font-size: 18px;
+  //  line-height: 20px;
+  //  color: #FFFFFF;
+  //
+  //}
+  }
+.partners{
+  height: 1122px;
+  background: #5A98D0;
+  border-radius: 200px 0px 0px 0px;
+  &__title{
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 56px;
+
+  }
+  &__card img{
+    margin: 40px 30px 15px 0;
+    text-align: center;
+  }
+  &__job{
+    height: 350px;
+    background: #316099;
+    border-radius: 0 200px 0 0;
+    padding:91px 0 0 216px;
+    display: flex;
+
+  }
+  &__work{
+    font-size: 25px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 317px;
+  }
+  &__desk{
+    font-size: 11px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 460px;
+  }
+  &__navbar{
+    padding: 104px 0 0 93px;
+  }
+  &__link{
+    width: 220px;
+    height: 56px;
+    background: #5A98D0;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      background: #9199a2;
+      color: #2c23b6;
+    }
+  }
+}
+.footer{
+ background: #5A98D0;
+  padding: 60px 0 0 96px;
+&__title{
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+  &:hover{
+    color: #445B78;
+  }
+}
+  &__content{
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  &__link{
+
+    &:hover{
+      text-decoration: underline;
+      color: #445B78;
+    }
+  }
+  &__number{
+    color: #FFFFFF;
+  }
+&__copyright{
+  padding: 80px 0 80px;
+}
+&__icons i{
+  margin-right: 15px;
+  transition: 0.6s;
+  &:hover{
+    transform: rotate(360deg);
+    color: #FFFFFF;
+  }
+}
+}
+
