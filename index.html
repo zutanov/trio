@@ -5,11 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<<<<<<< HEAD
     <title>Document</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+=======
+    <title>trio.com</title>
+>>>>>>> a60940bc87a241e7541197e172cf4b0d8ef9ec68
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -17,36 +21,25 @@
         <div class="container">
             <div class="grid grid__col-6">
                 <div class="section__side">
-                    <h1 class="hero__title">Здесь собрана вся информация обо всех ведущих операторах Кыргызстана</h1>
-                    <p class="hero__text">Trio - твой верный помощник при выборе оператора! Будьте всегда в курсе! Связь всегда с вами, когда Trio в кармане!</p>
-
-<!--                    <div class="operators">-->
-<!--                        <div class="megacom">-->
-<!--                            <a href="#" class="megacom__link">-->
-<!--                                <div class="megacom__frame">-->
-<!--                                    <img src="https://www.megacom.kg/uploads/ckeditor/pictures/507/content_ru_MegaCom_logo_2.png" alt="megacom">-->
-<!--                                </div>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                    <h1 class="hero__title"><span class="logo_black">TRiO</span> - твой верный помощник при выборе сотового оператора!</h1>
+                    <p class="hero__text"></p>
                 </div>
                 <div class="section__side">
-                    <div class="hero__frame">
-                        <img src="./images/hero/amico.png" alt="">
+                    <div class="hero__frame"><video src="./images/video.webm" loop autoplay="autoplay"></video>
+                        <img src="./images/hero/smartphone2.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
     <header class="header" id="header">
         <div class="container">
             <a href="#">
                 <div class="logo">
-                    TRIO
+                    <img src="./images/trio_logo_red.jpg" alt="">
                 </div>
             </a>
+<<<<<<< HEAD
             <nav class="header__navbar">
                 <a href="#" class="header__link"></a>
                 <a href="#" class="header__link"></a>
@@ -65,34 +58,167 @@
 <!--                <button class="languages__kg">Кыр</button>-->
 <!--                <button class="languages__ru">Рус</button>-->
 <!--            </div>-->
+=======
+            <label for="languages"></label>
+            <select name="" id="languages">
+                <option value="">Кыр</option>
+                <option value="">Ру</option>
+                <option value="">Eng</option>
+            </select>
+            <div>
+                <label for="search"></label>
+                <input type="search" id="search" placeholder="Поиск">
+            </div>
+>>>>>>> a60940bc87a241e7541197e172cf4b0d8ef9ec68
             <button class="btn">
                 Войти
             </button>
         </div>
     </header>
-
-    <section class="operators" id="operators">
+    <section class="covid" id="covid">
         <div class="container">
-<!--            <a href="" class="operators__link">-->
-                <div class="operators__logo operators__megacom">
-<!--                    <img src="" alt="">-->
-                    <p>Megacom</p>
-                </div>
-<!--            </a>-->
-<!--            <a href="#" class="operators__link">-->
-                <div class="operators__logo operators__oshka">
-<!--                    <img src="" alt="">-->
-                    <p>O!</p>
-                </div>
-<!--            </a>-->
-<!--            <a href="#" class="operators__link">-->
-                <div class="operators__logo operators__beeline">
-<!--                    <img src="" alt="">-->
-                    <p>Beeline</p>
-                </div>
-<!--            </a>-->
+            <div class="covid__info">
+                <h2 class="section__title covid__title">Пройдите вакцинацию и получите 10 ГБ интернета от наших операторов в подарок</h2>
+            </div>
         </div>
     </section>
+    <section class="about">
+        <div class="container">
+            <h2 class="section__main-title about__main-title">Выбери своего оператора</h2>
+            <div class="grid grid__col-4">
+                <div class="about__card">
+                    <img src="./images/about/beeline_bg.jpg" alt="">
+                    <h4 class="section__title about__title">О компании</h4>
+                    <p class="section__desc about__desc">Beeline - семейный оператор для Вас и Ваших близких.
+                        1 августа 1998 года был совершен первый звонок в GSM сети Кыргызстана - сети ОсОО «Бител», которая была основана в 1997 году.
+                    </p>
+                    <a href="https://beeline.kg/" class="section__link about__link">Подробнее...<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="#5A98D0"/>
+                    </svg>
+                    </a>
+                </div>
+                <div class="about__card">
+                    <img style="margin-top: 40px" src="./images/about/megacom_bg.jfif" alt="">
+                    <h4 class="section__title about__title">О компании</h4>
+                    <p class="section__desc about__desc">MegaCom (ЗАО «Альфа Телеком») – крупнейший мобильный оператор связи в Кыргызской Республике.
+                        Коммерческий запуск сети сотовой связи MegaCom состоялся 28 апреля 2006 года.
+                    </p>
+                    <a href="https://www.megacom.kg/" class="section__link about__link">Подробнее...<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="#5A98D0"/>
+                    </svg>
+                    </a>
+                </div>
+                <div class="about__card">
+                    <div class="about__image">
+                    <img style="margin-top: 80px;" src="./images/about/o_bg.jpg" alt="">
+                </div>
+                    <h4 class="section__title about__title">О компании</h4>
+                    <p class="section__desc about__desc">Мобильный оператор О! – лидер по покрытию и ёмкости сетей 4G/3G/2G в Кыргызстане, в зоне охвата которых проживают более 99% населения страны.
+                        Коммерческая эксплуатация сети началась в марте 2009 года.</p>
+                    <a href="https://o.kg/" class="section__link about__link">Подробнее...<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="#5A98D0"/>
+                    </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="store">
+        <div class="container">
+            <div class="store__advert grid grid__col-6 grid_gap20" >
+                <div class="store__leftside grid grid__floor">
+                    <div class="store__head">
+                        <h4 class="section__title store__title"><span class="store__title-bg">STORE</span></h4>
+                    </div>
+                    <div class="store__foot">
+                        <h4 class="section__desc store__desc">Скидки на день рождения!</h4>
+                    </div>
+                </div>
+                <div class="store__rightside"></div>
+            </div>
+            <div class="store__page">
+            <div class="store__object grid grid__col-4">
+                <div class="store__card">
+                    <div class="store__image">
+                    <img src="./images/store/smartphone_bg.png"  alt="">
+                    </div>
+                    <div class="store__card-desc">
+                        <h4 class="section__title card__title">Smartphone</h4>
+                    </div>
+                </div>
+                <div class="store__card_slider">
+                    <div class="store__image_slider">
+                        <img src="./images/store/smartphone_bg2.png"  alt="">
+                    </div>
+                    <div class="store__card-desc_slider">
+                        <p class="section__desc card__desc">Купить смартфоны <b class="color_red">Vivo</b></p>
+                    </div>
+                </div>
+                <div class="store__card_transition">
+                    <div class="store__image_transition">
+                        <img src="./images/store/smartphone_bg3.png"  alt="">
+                    </div>
+                    <div class="store__card-desc_transition">
+                        <p class="section__desc card__desc">Купить смартфоны <b class="color_red">Huawei</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="store__object grid grid__col-4">
+                    <div class="store__card">
+                        <div class="store__image">
+                            <img src="./images/store/gadget_bg.jpg"  alt="">
+                        </div>
+                        <div class="store__card-desc">
+                            <h4 class="section__title card__title">Gadget</h4>
+                        </div>
+                    </div>
+                    <div class="store__card_slider">
+                        <div class="store__image_slider">
+                            <img src="./images/store/gadjetbg2.png"  alt="">
+                        </div>
+                        <div class="store__card-desc_slider">
+                            <p class="section__desc card__desc">Купить наушники</p>
+                        </div>
+                    </div>
+                    <div class="store__card_transition">
+                        <div class="store__image_transition">
+                            <img src="./images/store/gadjetbg3.png"  alt="">
+                        </div>
+                        <div class="store__card-desc_transition">
+                            <p class="section__desc card__desc">Купить смарт-часы</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="store__object grid grid__col-4">
+                    <div class="store__card">
+                        <div class="store__image">
+                            <img src="./images/store/laptop_bg.jpg"  alt="">
+                        </div>
+                        <div class="store__card-desc">
+                            <h4 class="section__title card__title">Laptops</h4>
+                        </div>
+                    </div>
+                    <div class="store__card_slider">
+                        <div class="store__image_slider">
+                            <img src="./images/store/laptop_bg2.png"  alt="">
+                        </div>
+                        <div class="store__card-desc_slider">
+                            <p class="section__desc card__desc">Купить ноутбук <b class="color_blue">Xiaomi</b></p>
+                        </div>
+                    </div>
+                    <div class="store__card_transition">
+                        <div class="store__image_transition">
+                            <img src="./images/store/laptop_bg3.png"  alt="">
+                        </div>
+                        <div class="store__card-desc_transition">
+                            <p class="section__desc card__desc">Купить игровой ноутбук <b class="color_blue">Lenovo Legion</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<<<<<<< HEAD
 
     <section class="covid" id="covid">
         <div class="container">
@@ -185,5 +311,7 @@
          © TRio, 2021 </p>
   </div>
 </footer>
+=======
+>>>>>>> a60940bc87a241e7541197e172cf4b0d8ef9ec68
 </body>
 </html>
