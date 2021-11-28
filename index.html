@@ -1,14 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>trio.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Righteous&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -34,21 +35,28 @@
                     <img src="./images/trio_logo_red.jpg" alt="">
                 </div>
             </a>
-            <label for="languages"></label>
-            <select name="" id="languages">
-                <option value="">Кыр</option>
-                <option value="">Ру</option>
-                <option value="">Eng</option>
-            </select>
-            <div>
-                <label for="search"></label>
-                <input type="search" id="search" placeholder="Поиск">
-            </div>
-            <button class="btn">
-                Войти
-            </button>
+            <nav class="header__nav">
+                <a href="#" class="section__link header__link">TRiO STORE</a>
+                <a href="#" class="section__link header__link">Тарифы</a>
+                <a href="#" class="section__link header__link">Заказать</a>
+                <div>
+                    <label for="search"></label>
+                    <input type="search" id="search" placeholder="Поиск">
+                    <button class="search__btn">Найти</button>
+                </div>
+                <button class="header__btn">
+                    Войти
+                </button>
+                <label for="languages"></label>
+                <select class="header_select" name="" id="languages">
+                    <option value="">Кыр</option>
+                    <option value="">Руc</option>
+                    <option value="">Eng</option>
+                </select>
+            </nav>
         </div>
     </header>
+
     <section class="covid" id="covid">
         <div class="container">
             <div class="covid__info">
@@ -56,10 +64,11 @@
             </div>
         </div>
     </section>
+
     <section class="about">
         <div class="container">
             <h2 class="section__main-title about__main-title">Выбери своего оператора</h2>
-            <div class="grid grid__col-4">
+            <div class="grid grid__col-4 grid_gap50">
                 <div class="about__card">
                     <img src="./images/about/beeline_bg.jpg" alt="">
                     <h4 class="section__title about__title">О компании</h4>
@@ -97,6 +106,175 @@
             </div>
         </div>
     </section>
+
+    <section class="features">
+        <div class="features__container">
+            <h2 class="section__title">Выберите тариф</h2>
+            <div class="grid grid__col-3">
+                <div class="card color_emerald">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">MEGACOM</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque et libero obcaecati quibusdam saepe. Dolorem facere molestiae nemo perferendis quia?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card_120 color_emerald">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">120 сом</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                            <p class="card__text">8 ГБ</p>
+                            <p class="card__text">500 мин <span>внутри сети</span></p>
+                            <p class="card__text">5 мин <span>вне сети</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card color_emerald">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">160 сом</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                            <p class="card__text">18 ГБ</p>
+                            <p class="card__text">Безлимитные <span>звонки внутри сети</span></p>
+                            <p class="card__text">5 мин <span>вне сети</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card color_emerald">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">220 сом</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                            <p class="card__text">Безлимитный <span>интернет</span></p>
+                            <p class="card__text">Безлимитные <span>звонки внутри сети</span></p>
+                            <p class="card__text">60 мин <span>вне сети</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card color_lotus">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">0!</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card_120 color_lotus">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">120 сом</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                            <p class="card__text">8 ГБ</p>
+                            <p class="card__text">Безлимитные <span>звонки внутри сети</span></p>
+                            <p class="card__text">5 мин <span>вне сети</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card color_lotus">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">160 сом</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                            <p class="card__text">15 ГБ</p>
+                            <p class="card__text">Безлимитные <span>звонки внутри сети</span></p>
+                            <p class="card__text">20 мин <span>вне сети</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card color_lotus">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">220 сом</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                            <p class="card__text">Безлимитный <span>интернет</span></p>
+                            <p class="card__text">Безлимитные <span>звонки внутри сети</span></p>
+                            <p class="card__text">60 мин <span>вне сети</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card color_corn">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">BEELINE</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card_120 color_corn">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">120 сом</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                            <p class="card__text">8 ГБ</p>
+                            <p class="card__text">500 мин <span>внутри сети</span></p>
+                            <p class="card__text">5 мин <span>вне сети</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card color_corn">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">160 сом</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                            <p class="card__text">8 ГБ</p>
+                            <p class="card__text">500 мин <span>внутри сети</span></p>
+                            <p class="card__text">5 мин <span>вне сети</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card color_corn">
+                    <div class="card__img">
+                        <!--                        <img src="https://i.pinimg.com/564x/1e/ba/a3/1ebaa3a88f5af8ddade4452a74b0d1a7.jpg" alt="">-->
+                        <h3 class="card__title">235 сом</h3>
+                    </div>
+                    <div class="card__box">
+                        <div class="card__content">
+                            <h3 class="card__subtitle">---</h3>
+                            <p class="card__text">Безлимитный <span>интернет</span></p>
+                            <p class="card__text">Безлимитные <span>звонки внутри сети</span></p>
+                            <p class="card__text">60 мин <span>вне сети</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="store">
         <div class="container">
             <div class="store__advert grid grid__col-6 grid_gap20" >
@@ -111,7 +289,7 @@
                 <div class="store__rightside"></div>
             </div>
             <div class="store__page">
-            <div class="store__object grid grid__col-4">
+            <div class="store__object grid grid__col-4 grid_gap50">
                 <div class="store__card">
                     <div class="store__image">
                     <img src="./images/store/smartphone_bg.png"  alt="">
@@ -137,7 +315,7 @@
                     </div>
                 </div>
             </div>
-            <div class="store__object grid grid__col-4">
+            <div class="store__object grid grid__col-4 grid_gap50">
                     <div class="store__card">
                         <div class="store__image">
                             <img src="./images/store/gadget_bg.jpg"  alt="">
@@ -163,7 +341,7 @@
                         </div>
                     </div>
                 </div>
-            <div class="store__object grid grid__col-4">
+            <div class="store__object grid grid__col-4 grid_gap50">
                     <div class="store__card">
                         <div class="store__image">
                             <img src="./images/store/laptop_bg.jpg"  alt="">
@@ -192,5 +370,155 @@
             </div>
         </div>
     </section>
+
+    <div class="contact">
+        <div class="contact__container">
+            <div class="contact__info">
+                <div>
+                    <h2>Контактная информация</h2>
+                    <ul>
+                        <li>
+                            <span><img src="./images/contact/location.png" alt=""></span>
+                            <span>
+                                Орозбекова 37<br>
+                                г. Бишкек<br>
+                                010101
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="./images/contact/mail.png" alt=""></span>
+                            <span>
+                                support@trio.com
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="./images/contact/call.png" alt=""></span>
+                            <span>
+                                0500-500-500
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact__form">
+                <h2>ОФОРМИТЬ ЗАКАЗ</h2>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Имя</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Фамилия</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" required>
+                        <span>Адрес</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Номер телефона</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required></textarea>
+                        <span>Напишите комментарий</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Отправить">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="partners">
+        <div class="container">
+            <h4 class="section__title partners__title">Наши Партнеры</h4>
+            <div class="partners__card d-flex d-flex_sa">
+                <img src="./images/partners/bakaii.jpg" alt="">
+                <img src="./images/partners/kicb.jpg" alt="">
+                <img src="./images/partners/kyrgyz%20concept.png" alt="">
+                <img src="./images/partners/easy%20travel.png" alt="">
+            </div>
+            <div class="partners__card d-flex d-flex_sa">
+                <img src="./images/partners/orion-hotel.png" alt="">
+                <img src="./images/partners/jannat%20reg.png" alt="">
+                <img src="./images/partners/yandeks.png" alt="">
+                <img src="./images/partners/jorgo.jpg" alt="">
+            </div>
+            <div class="partners__job">
+                <div class="partners__work-together">
+                    <h4 class="section__title partners__title">Присоединяйся к команде TRiO</h4>
+                    <ul class="section__desc partners__desk">
+                        <li>Быстро принимаем и исполняем решения.</li>
+                        <li>Честно и открыто общаемся с нашими абонентами и друг с другом.</li>
+                        <li>Предоставляем неограниченные возможности для профессионального развития и роста.</li>
+                    </ul>
+                    <a href="#" class="section__link partners__link">Подробнее...
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="partners__navbar">
+                    <a href="#" class="partners__btn">Подать заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block grid grid__col-4 grid_gap50">
+                <div class="footer__card">
+                    <h4 class="section__title footer__title">TRIO</h4>
+                    <p class="footer__content">A: Орозбекова 37 г.Бишкек</p>
+                    <a href="mailto:trio@gmail.com" class="footer__content footer__link">E: support@trio.com</a>
+                    <a href="tel:+18447217120" class="footer_content  footer__number">T: +996500500500</a>
+                </div>
+                <div class="footer__card">
+                    <h4 class="section__title footer__title">О Компании</h4>
+                    <nav class="footer_nav">
+                        <a href="#" class="footer__content footer__link">О компании</a>
+                        <a href="#" class="footer__content footer__link">Проекты</a>
+                        <a href="#" class="footer__content footer__link">Услуги</a>
+                        <a href="#" class="footer__content footer__link">Работа в TRiO</a>
+                    </nav>
+                </div>
+                <div class="footer__card">
+                    <h4 class="section__title footer__title">Поддержка</h4>
+                    <nav class="footer_nav">
+                        <a href="#" class="footer__content footer__link">Обратная связь</a>
+                        <a href="#" class="footer__content footer__link">Популярные вопросы</a>
+                        <a href="#" class="footer__content footer__link">Задайте вопрос компании</a>
+                        <a href="#" class="footer__content footer__link">Полезные документы</a>
+                    </nav>
+                </div>
+                <div class="footer__icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-vk"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="bottom-footer">
+        <div class="container">
+            <p class="footer__copyright">© TRiO, 2021 </p>
+        </div>
+    </section>
+
 </body>
 </html>
